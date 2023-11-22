@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #ff9966, #ff5e62);
+}
+
+.LotsStatus {
+  font-size: 3vw;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+  color: #fff;
+}
+
+.ParkingLotsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+  width: 80%;
+  max-width: 1200px;
+}
+
+.ParkingLots {
+  width: 200px;
+  background-color: #48c790;
+  border-radius: 6px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.ParkingLots:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.value {
+  font-size: 2vw;
+  font-weight: bold;
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .LotsStatus {
+    font-size: 6vw;
+    position: relative;
+    top: 0;
+    margin-bottom: 20px; 
+  }
+
+  .value {
+    font-size: 3vw;
+    transform: scale(1.5);
+  }
+
+  .ParkingLots {
+    width: 100%;
+    padding: 40px;
+    margin-top: 20px; 
+  }
+
+  .ParkingLotsContainer {
+    flex-direction: column;
+  }
+}
