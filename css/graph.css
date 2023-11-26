@@ -1,0 +1,26 @@
+body {
+  background-color: #0d1314;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#lotsChart {
+  max-width: 1920px;
+  width: 100%;
+}
+
+.GoBackButton {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  background-color: #ffaf4d;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}

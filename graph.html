@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Parking Lots Status - Graph</title>
+	<meta name="description" content="This is a graph showing the popularity of the parking lots">
+    <link rel="stylesheet" type="text/css" href="css/graph.css">
+</head>
+
+<body>
+	<!-- Button to go back to the previous page -->
+	<button class="GoBackButton" onclick="goBack()">Go Back</button>
+
+	<!-- Canvas element for the chart -->
+	<canvas id="lotsChart"></canvas>
+
+	<!-- Firebase and Chart.js scripts -->
+	<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+	<!-- Firebase initialization code -->
+	<script type="module">
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+		import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-analytics.js";
+	</script>
+
+    <!-- js script for handling the graph page functionality -->
+    <script type="text/javascript" src="js/graph.js"></script>
+
+	<!-- JavaScript function to go back to the previous page -->
+	<script>
+	function goBack() {
+	  window.history.back();
+	}
+	</script>
+</body>
+</html>
