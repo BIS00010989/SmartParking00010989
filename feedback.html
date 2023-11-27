@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Feedback</title>
+	<meta name="description" content="This is a feedback page">
+    <link rel="stylesheet" type="text/css" href="css/feedback.css">
+</head>
+
+<body>
+	<!-- Button to go back to the previous page -->
+	<button class="goBackButton" onclick="goBack()">Go Back</button>
+
+	<!-- Text to show  if the feedback container is empty -->
+	<div id="noFeedbackMessage" style="display: none;">No feedbacks found.</div>
+	
+	<!-- Container for feedback -->
+	<div class="FeedbackContainer" id="feedbackContainer"></div>
+
+    <!-- Feedback form -->
+    <div class="FeedbackForm">
+        <textarea id="feedbackInput" placeholder="Write your feedback here..."></textarea>
+        <button id="submitFeedback">Submit Feedback</button>
+    </div>
+
+	<!-- Firebase scripts -->
+	<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+	<!-- Firebase initialization code -->
+	<script type="module">
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+		import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-analytics.js";
+	</script>
+
+    <!-- js script for handling firebase functionality -->
+    <script type="text/javascript" src="js/feedback.js"></script>
+
+	<!-- JavaScript function to go back to the previous page -->
+	<script>
+		function goBack() {
+		  window.history.back();
+		}
+		</script>
+</body> 
+</html>

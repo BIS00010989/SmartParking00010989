@@ -10,11 +10,9 @@ body {
 }
 
 .TextHeaderParkingLotsStatus{
-  position: relative;
   font-size: 3vw;
   font-weight: bold;
   text-align: center;
-  left: 0.75%;
   margin: -250px -5px 0;
   color: #fff;
 }
@@ -70,8 +68,8 @@ body {
 
 .FeedbackButton{
   position: absolute;
-  top: 57%;
   left: 2%;
+  bottom: 45%;
   right: 75%;
   text-align: center;
   background-color: #ffffffa6;
@@ -83,7 +81,7 @@ body {
 
 .FeedbackButton a{
   color: inherit;      
-  text-decoration: none;  
+  text-decoration: none; 
 }
 
 
